@@ -1,0 +1,55 @@
+Battle Plan
+
+2D, similar in style to Dont Starve
+
+World generates with random atmosphere composition
+
+Five material types of varying strength and rarity (non-living)
+
+Three animal types of varying hostility, edibility, and material strength
+
+Three plant types of varying edibility, material strength, and ingredient uses (At least one type is a tree)
+
+Info on all materials, animals, plants, even the player species is unknown, and must be discovered.
+All materials, crafted items, animals, etc, can be named via autoname or player named.
+
+Materials can be used for crafting items, food, tools, etc.
+
+
+What's needed:
+
+<Item List>
+-
+
+Planet class- the host object
+LifeForm class- baseline for all life objects
+	-Animal
+	-Plant	
+Material class- baseline for all materials in the game, organic and non-organic
+Item class- baseline for all items
+
+
+Elaboration
+
+<Planet Class>:
+Atts
+-Name
+-Atmosphere gas
+-World colour
+-GameObjects (All objects in game)
+
+Funcs
+-Day Night cycle, gametick
+
+<LifeForm Class>:
+Atts
+-Name
+-Health
+-Colour
+-Toxicity
+-Materials()
+
+Funcs
+-Get/SetHealth
+-Die
+-update (gametick related)
